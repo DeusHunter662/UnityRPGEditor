@@ -1,7 +1,7 @@
-using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityRPGEditor.Editor;
 
-namespace UnityRPGEditor.Editor
+namespace UnityRPGEditor
 {
     [CreateAssetMenu(menuName = "RPG Editor/New Weapon")]
     public class WeaponData : ItemData
@@ -19,7 +19,7 @@ namespace UnityRPGEditor.Editor
         public float Range { get; private set; } = 1.5f;
 
         [field: SerializeField]
-        public int Duribility { get; private set; } = 100;
+        public int Durability { get; private set; } = 100;
     }
 
     public enum DamageType
